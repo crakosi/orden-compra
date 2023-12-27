@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: servicio-orden-compra
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+
+app:
+  client:
+    id: client
+    secret: secrets
+    scope-read: USERs
+    scope-write: ADMIN
+  client-redirect-debugger: https://oauthdebugger.com/debug
+  client-redirect-spring-doc: https://springone.io/authorized
+    
+
+    
+server:
+  port: 8090
+config: 
+  allowedorigins:
+    - http://localhost:4200
+
+    
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
