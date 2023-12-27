@@ -1,4 +1,4 @@
-## Proyecto qu utiliza: 
+## Proyecto que utiliza: 
 
 Spring Boot 3.2.1, 
 
